@@ -1,0 +1,234 @@
+{
+  "0": {
+    "type": "depart"
+  },
+  "1": {
+    "type": "propriete",
+    "propriete": {
+      "nom": "Corte",
+      "prix": 60
+    }
+  },
+  "2": {
+    "type": "chance"
+  },
+  "3": {
+    "type": "propriete",
+    "propriete": {
+      "nom": "Fium'Orbu",
+      "prix": 60
+    }
+  },
+  "4": {
+    "type": "impot"
+  },
+  "5": {
+    "type": "propriete",
+    "propriete": {
+      "nom": "Aéroport d'Ajaccio",
+      "prix": 200
+    }
+  },
+  "6": {
+    "type": "propriete",
+    "propriete": {
+      "nom": "Furiani",
+      "prix": 100
+    }
+  },
+  "7": {
+    "type": "chance"
+  },
+  "8": {
+    "type": "propriete",
+    "propriete": {
+      "nom": "Vescovato",
+      "prix": 100
+    }
+  },
+  "9": {
+    "type": "propriete",
+    "propriete": {
+      "nom": "Casinca",
+      "prix": 120
+    }
+  },
+  "10": {
+    "type": "prison"
+  },
+  "11": {
+    "type": "propriete",
+    "propriete": {
+      "nom": "Borgo",
+      "prix": 140
+    }
+  },
+  "12": {
+    "type": "propriete",
+    "propriete": {
+      "nom": "Électricité",
+      "prix": 150
+    }
+  },
+  "13": {
+    "type": "propriete",
+    "propriete": {
+      "nom": "Biguglia",
+      "prix": 140
+    }
+  },
+  "14": {
+    "type": "propriete",
+    "propriete": {
+      "nom": "San Martinu",
+      "prix": 160
+    }
+  },
+  "15": {
+    "type": "propriete",
+    "propriete": {
+      "nom": "Gare de Bastia",
+      "prix": 200
+    }
+  },
+  "16": {
+    "type": "propriete",
+    "propriete": {
+      "nom": "Patrimoniu",
+      "prix": 180
+    }
+  },
+  "17": {
+    "type": "chance"
+  },
+  "18": {
+    "type": "propriete",
+    "propriete": {
+      "nom": "Bastia",
+      "prix": 180
+    }
+  },
+  "19": {
+    "type": "propriete",
+    "propriete": {
+      "nom": "Brando",
+      "prix": 200
+    }
+  },
+  "20": {
+    "type": "parc"
+  },
+  "21": {
+    "type": "propriete",
+    "propriete": {
+      "nom": "Ville-di-Pietrabugnio",
+      "prix": 220
+    }
+  },
+  "22": {
+    "type": "chance"
+  },
+  "23": {
+    "type": "propriete",
+    "propriete": {
+      "nom": "Ota",
+      "prix": 220
+    }
+  },
+  "24": {
+    "type": "propriete",
+    "propriete": {
+      "nom": "Grosseto-Prugna",
+      "prix": 240
+    }
+  },
+  "25": {
+    "type": "propriete",
+    "propriete": {
+      "nom": "Port de Bonifacio",
+      "prix": 200
+    }
+  },
+  "26": {
+    "type": "propriete",
+    "propriete": {
+      "nom": "Ajaccio",
+      "prix": 260
+    }
+  },
+  "27": {
+    "type": "propriete",
+    "propriete": {
+      "nom": "L’Île-Rousse",
+      "prix": 260
+    }
+  },
+  "28": {
+    "type": "propriete",
+    "propriete": {
+      "nom": "Eaux",
+      "prix": 150
+    }
+  },
+  "29": {
+    "type": "propriete",
+    "propriete": {
+      "nom": "Calvi",
+      "prix": 280
+    }
+  },
+  "30": {
+    "type": "prison"
+  },
+  "31": {
+    "type": "propriete",
+    "propriete": {
+      "nom": "Sartène",
+      "prix": 300
+    }
+  },
+  "32": {
+    "type": "propriete",
+    "propriete": {
+      "nom": "Propriano",
+      "prix": 300
+    }
+  },
+  "33": {
+    "type": "chance"
+  },
+  "34": {
+    "type": "propriete",
+    "propriete": {
+      "nom": "Bonifacio",
+      "prix": 320
+    }
+  },
+  "35": {
+    "type": "propriete",
+    "propriete": {
+      "nom": "Gare de Calvi",
+      "prix": 200
+    }
+  },
+  "36": {
+    "type": "chance"
+  },
+  "37": {
+    "type": "propriete",
+    "propriete": {
+      "nom": "Porto-Vecchio",
+      "prix": 350
+    }
+  },
+  "38": {
+    "type": "impot"
+  },
+  "39": {
+    "type": "propriete",
+    "propriete": {
+      "nom": "Saint-Florent",
+      "prix": 400
+    }
+  }
+}
