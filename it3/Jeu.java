@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Jeu {
 	private static final int NBJOUEURMAX = 6; //Nombre max de joueurs
-	private static final int DMAX = 6; //Valeur max du dÃ©
+	private static final int DMAX = 6; //Valeur max du dé
 	private ArrayList<Joueur> listeJoueurs; //Liste des joueurs
 	private int nbTours; //Nombre de tours
 	private static Random r = new Random();
@@ -21,25 +21,25 @@ public class Jeu {
 	}
 	
 	/**
-	 * Ajoute un joueur Ã  la liste des joueurs
-	 * @param j Joueur Ã  ajouter
+	 * Ajoute un joueur à la liste des joueurs
+	 * @param j Joueur à ajouter
 	 */
 	public void ajouterJoueur(Joueur j) {
 		if (listeJoueurs.size() < NBJOUEURMAX)
 			listeJoueurs.add(j);
 		else
-			System.err.println("Le nombre max de joueurs a Ã©tÃ© atteint");
+			System.err.println("Le nombre max de joueurs a été atteint");
 	}
 	
 	/**
-	 * DÃ©marrage du jeu
+	 * Démarrage du jeu
 	 */
 	public void lancerJeu() {
 		int nbJoueurs = listeJoueurs.size();
 		Joueur joueur;
 		int pos; //Position du joueur
-		int d1; //DÃ© 1
-		int d2; //DÃ© 2
+		int d1; //Dé 1
+		int d2; //Dé 2
 		int doubles = 0; //Nombre de doubles du joueur
 		plateau.initialiserCases();
 		for (int i=0; i<nbTours; i++) {
