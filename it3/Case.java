@@ -3,7 +3,7 @@ package it3;
 import java.util.ArrayList;
 
 public class Case {
-	private ArrayList<Joueur> listeJoueurs; //Joueurs présents sur la case
+	private ArrayList<Joueur> listeJoueurs; //Joueurs prÃ©sents sur la case
 	private int argent; //Argent de la case
 	
 	/**
@@ -15,15 +15,15 @@ public class Case {
 	}
 	
 	/**
-	 * Méthode positionnant le pion du joueur sur la case
-	 * @param joueur Pion à placer
+	 * MÃ©thode positionnant le pion du joueur sur la case
+	 * @param joueur Pion Ã  placer
 	 */
 	public void placerJoueur(Joueur joueur) {
 		listeJoueurs.add(joueur);
 	}
 	
 	/**
-	 * Enlève un pion de la case
+	 * EnlÃ¨ve un pion de la case
 	 */
 	public void enleverJoueur(Joueur joueur) {
 		listeJoueurs.remove(joueur);
