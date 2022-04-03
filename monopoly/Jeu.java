@@ -5,7 +5,6 @@ import java.util.*;
 public class Jeu {
 	private static final int NBJOUEURMAX = 6; //Nombre max de joueurs
 	private static final int DMAX = 6; //Valeur max du dé
-	private static final int NUMPRISON = 10; // Numéro de la case prison
 	private ArrayList<Joueur> listeJoueurs; //Liste des joueurs
 	private int nbTours; //Nombre de tours
 	private static Random r = new Random();
@@ -20,6 +19,10 @@ public class Jeu {
 		this.nbTours = nbTours;
 		listeJoueurs = new ArrayList<Joueur>();
 		this.plateau = new Plateau();
+	}
+	
+	public Plateau getPlateau() {
+		return plateau;
 	}
 	
 	/**
@@ -82,6 +85,10 @@ public class Jeu {
 			else {
 				deplacerJoueur(joueur, d1+d2);
 				plateau.getCase(joueur.getPosition()).eventCase(joueur); //Événement lorsque le joueur est sur la case
+				//Événement de la case Aller en prison
+				if (joueur.getPosition() == Plateau.NUMALLERPRISON) {
+					emprisonner(joueur);
+				}
 			}
 			//Vérifie le solde du joueur
 			if (joueur.getArgent() < 0) {
@@ -113,10 +120,10 @@ public class Jeu {
 		int prevPos = j.getPosition();
 		j.setCoupsPrison(3);
 		Case prevCase = plateau.getCase(prevPos);
-		Case newCase = plateau.getCase(NUMPRISON);
+		Case newCase = plateau.getCase(Plateau.NUMPRISON);
 		prevCase.enleverJoueur(j);
 		newCase.placerJoueur(j);
-		j.setPosition(NUMPRISON);
+		j.setPosition(Plateau.NUMPRISON);
 	}
 
 	@Override
