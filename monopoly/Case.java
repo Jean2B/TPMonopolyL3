@@ -1,8 +1,8 @@
-package it1;
+package monopoly;
 
 import java.util.ArrayList;
 
-public class Case {
+public abstract class Case {
 	private ArrayList<Joueur> listeJoueurs; //Joueurs présents sur la case
 	
 	/**
@@ -11,6 +11,8 @@ public class Case {
 	public Case() {
 		listeJoueurs = new ArrayList<Joueur>();
 	}
+	
+	public abstract void eventCase(Joueur j);
 	
 	/**
 	 * Méthode positionnant le pion du joueur sur la case
@@ -29,11 +31,9 @@ public class Case {
 	
 	@Override
 	public String toString() {
-		String msg = "";
-		if (listeJoueurs.size() == 0)
-			msg += "vide\n";
-		else
-			msg += listeJoueurs + "\n";
+		String msg = " ";
+		if (listeJoueurs.size() > 0)
+			msg += listeJoueurs;
 		return msg;
 	}
 }

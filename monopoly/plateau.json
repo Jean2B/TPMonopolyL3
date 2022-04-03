@@ -20,12 +20,13 @@
     }
   },
   "4": {
-    "type": "impot"
+    "type": "impot",
+    "montant": 200
   },
   "5": {
     "type": "propriete",
     "propriete": {
-      "nom": "Aéroport d'Ajaccio",
+      "nom": "Aeroport d'Ajaccio",
       "prix": 200
     }
   },
@@ -66,7 +67,7 @@
   "12": {
     "type": "propriete",
     "propriete": {
-      "nom": "Électricité",
+      "nom": "Electricite",
       "prix": 150
     }
   },
@@ -159,7 +160,7 @@
   "27": {
     "type": "propriete",
     "propriete": {
-      "nom": "L’Île-Rousse",
+      "nom": "L'Ile-Rousse",
       "prix": 260
     }
   },
@@ -183,7 +184,7 @@
   "31": {
     "type": "propriete",
     "propriete": {
-      "nom": "Sartène",
+      "nom": "Sartene",
       "prix": 300
     }
   },
@@ -222,7 +223,8 @@
     }
   },
   "38": {
-    "type": "impot"
+    "type": "impot",
+    "montant": 100
   },
   "39": {
     "type": "propriete",

@@ -1,4 +1,4 @@
-package it2;
+package monopoly;
 
 public class Joueur {
 	private String nom;
@@ -6,12 +6,16 @@ public class Joueur {
 	private int position; //Position du pion
 	private static int nbJoueurs = 0;
 	private int argent;
+	private int coupsPrison; //Nb de coups restants en prison
 	/**
 	 * Constructeur de joueur
 	 * @param nom Nom du joueur
 	 */
 	public Joueur(String nom) {
 		this.nom = nom;
+		position = 0;
+		argent = 1500;
+		coupsPrison = 0;
 		nbJoueurs++;
 		code = "J" + nbJoueurs;
 	}
@@ -32,6 +36,10 @@ public class Joueur {
 		return position;
 	}
 	
+	public int getArgent() {
+		return argent;
+	}
+	
 	/**
 	 * Modificateur
 	 * @param pos Nouvelle position du joueur
@@ -42,11 +50,19 @@ public class Joueur {
 	
 	@Override
 	public String toString() {
-		String msg = code + " " + nom;
+		String msg = code + " " + nom + " (" + argent + "€)";
 		return msg;
 	}
 	
 	public void ajouterArgent(int a) {
 		argent += a;
+	}
+	
+	public void setCoupsPrison(int coups) {
+		coupsPrison = coups;
+	}
+	
+	public int getCoupsPrison() {
+		return coupsPrison;
 	}
 }

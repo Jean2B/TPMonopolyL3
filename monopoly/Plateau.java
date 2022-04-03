@@ -1,4 +1,4 @@
-package it3;
+package monopoly;
 
 public class Plateau {
 	protected static final int NBCASES = 40; //Nombre de cases
@@ -14,13 +14,15 @@ public class Plateau {
 	public void initialiserCases() {
 		String typeCase;
 		for(int i=0; i<NBCASES; i++) {
-			typeCase = ParseJSON.getTypeCase(i);
+			ParseJSON json = new ParseJSON();
+			typeCase = json.getTypeCase(i);
 			switch(typeCase) {
-				case "depart": cases[i] = new CaseDepart();
-				case "propriete": cases[i] = new CasePropriete(i);
-				case "impot": cases[i] = new CaseImpot(i);
-				case "chance": cases[i] = new CaseChance(i);
-				case "prison": cases[i] = new CasePrison(i);
+				case "depart": cases[i] = new CaseDepart(); break;
+				case "propriete": cases[i] = new CasePropriete(i); break;
+				case "impot": cases[i] = new CaseImpot(i); break;
+				case "chance": cases[i] = new CaseChance(); break;
+				case "prison": cases[i] = new CasePrison(); break;
+				case "parc": cases[i] = new CaseParc(); break;
 			}
 		}
 	}
@@ -33,7 +35,7 @@ public class Plateau {
 	public String toString() {
 		String msg = "";
 		for (int i=0; i<NBCASES; i++) {
-			msg += "Case " + i + " : " + cases[i];
+			msg += "[" + i + "] " + cases[i] + "\n";
 		}
 		return msg;
 	}
