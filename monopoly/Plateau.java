@@ -2,6 +2,8 @@ package monopoly;
 
 public class Plateau {
 	protected static final int NBCASES = 40; //Nombre de cases
+	protected static final int NUMPRISON = 10;
+	protected static final int NUMALLERPRISON = 30;
 	private Case[] cases; //Cases du jeu
 	
 	public Plateau() {
